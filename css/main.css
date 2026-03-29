@@ -1,0 +1,185 @@
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Brand Colors */
+    --color-bg: #050505;
+    --color-text: #eaeaea;
+    --color-accent: #b8860b;
+    /* Dark Goldenrod - More Muted Luxury */
+    --color-glass: rgba(255, 255, 255, 0.03);
+    --color-glass-border: rgba(255, 255, 255, 0.1);
+
+    /* Variant Colors */
+    --mavi-primary: #001f3f;
+    --mavi-accent: #c5a059;
+    --ezra-primary: #1a2f1a;
+    --ezra-accent: #708090;
+    --lea-primary: #4a3b4a;
+    --lea-accent: #d4af37;
+    --zayyan-primary: #4d2612;
+    --zayyan-accent: #ff8c00;
+    --ola-primary: #2d5a27;
+    --ola-accent: #e5e5e5;
+
+    /* Fonts */
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --section-padding: 10rem 5%;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 5rem 5%;
+    }
+
+    .hero-content {
+        padding: 0 5%;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.8;
+    /* Increased line-height for luxury spacing */
+    cursor: none;
+    /* For custom luxury cursor */
+}
+
+/* Noise Texture */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Custom Cursor */
+#custom-cursor {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--color-accent);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    transition: transform 0.1s ease, background 0.3s ease;
+    mix-blend-mode: difference;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+@media (max-width: 768px) {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        letter-spacing: 0.15em;
+    }
+}
+
+/* Utilities */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.glass {
+    background: var(--color-glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--color-glass-border);
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+    object-fit: cover;
+    will-change: transform;
+}
+
+section {
+    position: relative;
+    padding: var(--section-padding);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /* Safeguard against any internal content leaks */
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animations */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+[data-reveal].active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Global Card Background Refinement */
+.card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) blur(10px);
+    opacity: 0.18;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    z-index: 0;
+}

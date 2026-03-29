@@ -1,0 +1,175 @@
+.philosophy {
+    padding: 15rem 0;
+    background: var(--color-bg);
+    position: relative;
+}
+
+.philosophy-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 10rem;
+}
+
+.acronym-layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.section-desc {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+}
+
+.acronym-letter {
+    padding: 4rem 2rem;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.acronym-letter:hover .card-bg {
+    filter: grayscale(0%) blur(0px);
+    opacity: 0.45;
+    transform: scale(1.1);
+}
+
+.acronym-letter:hover {
+    border-color: rgba(204, 172, 114, 0.3);
+    transform: translateY(-5px);
+}
+
+.big-char {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    line-height: 1;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    opacity: 0.15;
+    transition: all 0.6s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.acronym-letter:hover .big-char {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.acronym-info {
+    position: relative;
+    z-index: 1;
+}
+
+.acronym-info h3 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-family: var(--font-heading);
+}
+
+.acronym-info p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3rem;
+    min-height: 5em;
+}
+
+.acronym-details {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detail-item strong {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent);
+}
+
+.detail-item span {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.emotion {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .philosophy {
+        padding: 8rem 0;
+    }
+
+    .philosophy-header {
+        margin-bottom: 5rem;
+        padding: 0 5%;
+    }
+
+    .acronym-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 4rem;
+        padding: 0 5%;
+    }
+
+    .acronym-letter {
+        padding: 3rem 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .big-char {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .acronym-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .acronym-info p {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        min-height: auto;
+    }
+
+    .acronym-details {
+        margin-bottom: 2rem;
+    }
+
+    .detail-item {
+        align-items: center;
+    }
+
+    .detail-item span {
+        font-size: 0.85rem;
+    }
+}

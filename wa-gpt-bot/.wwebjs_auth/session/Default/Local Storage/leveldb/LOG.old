@@ -1,0 +1,20 @@
+2026/03/12-10:26:27.469 21f39f Reusing MANIFEST /Users/mac/codingan/jid/random/hafin/wa-gpt-bot/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+2026/03/12-10:26:27.477 21f39f Recovering log #13
+2026/03/12-10:26:27.478 21f39f Reusing old log /Users/mac/codingan/jid/random/hafin/wa-gpt-bot/.wwebjs_auth/session/Default/Local Storage/leveldb/000013.log 
+2026/03/12-11:36:42.968 21f3a2 Level-0 table #17: started
+2026/03/12-11:36:42.983 21f3a2 Level-0 table #17: 15045 bytes OK
+2026/03/12-11:36:43.020 21f3a2 Delete type=0 #13
+2026/03/12-11:36:43.031 21f3a2 Compacting 4@0 + 0@1 files
+2026/03/12-11:36:43.043 21f3a2 Generated table #18@0: 65 keys, 5208 bytes
+2026/03/12-11:36:43.043 21f3a2 Compacted 4@0 + 0@1 files => 5208 bytes
+2026/03/12-11:36:43.069 21f3a2 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/03/12-11:36:43.071 21f3a2 Delete type=2 #14
+2026/03/12-11:36:43.071 21f3a2 Delete type=2 #17
+2026/03/12-11:36:43.071 21f3a2 Delete type=2 #7
+2026/03/12-11:36:43.071 21f3a2 Delete type=2 #11
+2026/03/12-14:24:56.356 21f3a2 Level-0 table #20: started
+2026/03/12-14:24:56.369 21f3a2 Level-0 table #20: 14675 bytes OK
+2026/03/12-14:24:56.398 21f3a2 Delete type=0 #16
+2026/03/12-21:58:28.586 21f3a2 Level-0 table #22: started
+2026/03/12-21:58:28.603 21f3a2 Level-0 table #22: 13944 bytes OK
+2026/03/12-21:58:28.645 21f3a2 Delete type=0 #19

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CMPL-1773285241094",
+    "sender": "6285600267104@c.us",
+    "feature": "Eventlalin",
+    "detail": "Ada gangguan lalin baru dibikin tapi statusnya tiba-tiba selesai.",
+    "timestamp": "2026-03-12T03:14:01.094Z"
+  },
+  {
+    "id": "CMPL-1773285587576",
+    "sender": "6285600267104@c.us",
+    "feature": "Eventlalin",
+    "detail": "Gangguan lalin tidak tampil.",
+    "timestamp": "2026-03-12T03:19:47.576Z"
+  },
+  {
+    "id": "CMPL-1773286896542",
+    "sender": "6285600267104@c.us",
+    "reporter_name": "demonhuntersword",
+    "feature": "Maps",
+    "detail": "Ingin melaporkan masalah terkait aplikasi maps.",
+    "status": "Pending",
+    "timestamp": "2026-03-12T03:41:36.542Z"
+  }
+]

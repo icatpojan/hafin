@@ -1,0 +1,21 @@
+[
+  {
+    "id": "CMPL-1773286091792",
+    "sender": "6285600267104@c.us",
+    "reporter_name": "fauzan",
+    "feature": "radar",
+    "detail": "Radar di km 20 sering mati.",
+    "solusi": "udah di fix. bisa di cek lagi datanya udah masuk",
+    "status": "selesai",
+    "timestamp": "2026-03-12T03:28:11.792Z"
+  },
+  {
+    "id": "CMPL-1773286293025",
+    "sender": "6285600267104@c.us",
+    "reporter_name": "krisna",
+    "feature": "radar",
+    "detail": "Radar di km 20 masih mati meskipun sebelumnya sudah diperbaiki.",
+    "status": "Pending",
+    "timestamp": "2026-03-12T03:31:33.025Z"
+  }
+]

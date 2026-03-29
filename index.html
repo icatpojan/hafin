@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAFIN | Arsitektur Penciuman Premium</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP for Immersive Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/philosophy.css">
+    <link rel="stylesheet" href="css/variants.css">
+    <link rel="stylesheet" href="css/details.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="logo">HAFIN</a>
+        <ul class="nav-links">
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#variants-scroll">Collection</a></li>
+            <li><a href="#composition">Architecture</a></li>
+            <li><a href="#packaging">Packaging</a></li>
+        </ul>
+        <a href="#" class="nav-btn">Request Prospectus</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section V5 -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-bottom-fade"></div>
+            <video autoplay muted loop playsinline class="parallax-bg hero-video">
+                <source src="assets/grok-video-e429bf2c-e89b-42ee-b2b6-1c44e5bbd5f9.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <span class="hero-subtitle" data-reveal>Olfactory Architecture</span>
+                <h1 class="hero-title" data-reveal>REDEFINING<br>SENSORY<br>LUXURY</h1>
+                <p class="hero-description" data-reveal>More than just a scent, it's a statement of identity.
+                    HAFIN curates the rarest essences for authentic souls.</p>
+                <!-- <div class="hero-cta-group" data-reveal>
+                    <a href="#philosophy" class="primary-btn">Brand Vision</a>
+                    <a href="#variants-scroll" class="secondary-btn">Explore</a>
+                </div> -->
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- Brand Deep-Dive Philosophy -->
+        <section id="philosophy" class="philosophy">
+            <div class="container">
+                <div class="philosophy-header" data-reveal>
+                    <span class="section-tag">The Core Values</span>
+                    <h2>HAFIN PHILOSOPHY</h2>
+                    <p class="section-desc">HAFIN is not just a label; it is a manifestation of our dedication to
+                        perfection. We integrate cultural heritage with future technology to create new standards in the
+                        global Haute Parfumerie industry.</p>
+                </div>
+
+                <div class="acronym-layout">
+                    <div class="acronym-letter" data-reveal>
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1000&auto=format&fit=crop');">
+                        </div>
+                        <span class="big-char">H</span>
+                        <div class="acronym-info">
+                            <h3>Harmony</h3>
+                            <p>Ekuilibrium sensorik antara bahan baku eksotis Nusantara dan presisi teknik distilasi
+                                ultra-modern.</p>
+                            <div class="acronym-details">
+                                <div class="detail-item">
+                                    <strong>Technical Vision:</strong>
+                                    <span>Ratio 0.618 (Golden Ratio) in molecular blending.</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Emotional Impact:</strong>
+                                    <span>A feeling of simultaneous connection to nature and the future.</span>
+                                </div>
+                            </div>
+                            <span class="emotion">Spirit: Connection</span>
+                        </div>
+                    </div>
+                    <div class="acronym-letter" data-reveal>
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=1000&auto=format&fit=crop');">
+                        </div>
+                        <span class="big-char">A</span>
+                        <div class="acronym-info">
+                            <h3>Absolute</h3>
+                            <p>Kejernihan tanpa kompromi. Hanya menggunakan konsentrat 'Absolute' murni dari distilasi
+                                pertama.</p>
+                            <div class="acronym-details">
+                                <div class="detail-item">
+                                    <strong>Technical Vision:</strong>
+                                    <span>99.9% raw material purity without cheap synthetic fillers.</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Emotional Impact:</strong>
+                                    <span>Unshakable self-integrity and honesty of character.</span>
+                                </div>
+                            </div>
+                            <span class="emotion">Spirit: Integrity</span>
+                        </div>
+                    </div>
+                    <div class="acronym-letter" data-reveal>
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?q=80&w=1000&auto=format&fit=crop');">
+                        </div>
+                        <span class="big-char">F</span>
+                        <div class="acronym-info">
+                            <h3>Fine</h3>
+                            <p>Kurasi pengerjaan tangan (craftsmanship) tingkat tinggi pada setiap aspek fisik produk.
+                            </p>
+                            <div class="acronym-details">
+                                <div class="detail-item">
+                                    <strong>Technical Vision:</strong>
+                                    <span>Italian crystal glass with 0.1mm thickness tolerance.</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Emotional Impact:</strong>
+                                    <span>Appreciation for detail and respect for oneself.</span>
+                                </div>
+                            </div>
+                            <span class="emotion">Spirit: Respect</span>
+                        </div>
+                    </div>
+                    <div class="acronym-letter" data-reveal>
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop');">
+                        </div>
+                        <span class="big-char">I</span>
+                        <div class="acronym-info">
+                            <h3>Infinite</h3>
+                            <p>Daya pancar (sillage) cerdas dan ketahanan yang melampaui siklus waktu harian.</p>
+                            <div class="acronym-details">
+                                <div class="detail-item">
+                                    <strong>Technical Vision:</strong>
+                                    <span>Slow-Release Molecular Bond technology for 12+ hour longevity.</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Emotional Impact:</strong>
+                                    <span>Eternal confidence and an unforgettable memory trail.</span>
+                                </div>
+                            </div>
+                            <span class="emotion">Spirit: Confidence</span>
+                        </div>
+                    </div>
+                    <div class="acronym-letter" data-reveal>
+                        <div class="card-bg"
+                            style="background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1000&auto=format&fit=crop');">
+                        </div>
+                        <span class="big-char">N</span>
+                        <div class="acronym-info">
+                            <h3>Noble</h3>
+                            <p>Representasi martabat dan otoritas dalam spektrum penciuman yang elegan.</p>
+                            <div class="acronym-details">
+                                <div class="detail-item">
+                                    <strong>Technical Vision:</strong>
+                                    <span>Scent profile dry-down that leaves a 'Velvet-Woody' impression.</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Emotional Impact:</strong>
+                                    <span>Quiet authority, leadership charisma, and high dignity.</span>
+                                </div>
+                            </div>
+                            <span class="emotion">Spirit: Power</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Scroll Section for Variants -->
+        <div id="variants-scroll" class="horizontal-scroll-container">
+            <div class="horizontal-inner">
+
+                <!-- Intro Varian V5 -->
+                <section class="horizontal-section intro-section">
+                    <div class="intro-content">
+                        <span class="intro-tag" data-reveal>The Masterpiece</span>
+                        <h2 class="intro-headline" data-reveal>5 CHARACTERS.<br>5 EMOTIONS.<br>1 STANDARD.</h2>
+                        <p class="intro-desc" data-reveal>Explore the sensory architecture of each variant through the
+                            exclusive dossiers below.</p>
+                    </div>
+                    <h1 class="huge-title">PENTAGONAL</h1>
+                </section>
+
+                <!-- Mavi -->
+                <section class="horizontal-section product-dossier" data-variant="mavi">
+                    <div class="dossier-grid">
+                        <div class="dossier-visual">
+                            <img src="assets/hafin_v3_mavi_unified_1772951697535.png" alt="Mavi">
+                        </div>
+                        <div class="dossier-info">
+                            <span class="variant-tag">Stoic & Oceanic</span>
+                            <h2 class="variant-title">MAVI</h2>
+                            <div class="note-blocks">
+                                <div class="note-block">
+                                    <h3>Top</h3>
+                                    <p>Sea Salt, Ozonic Accord</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Heart</h3>
+                                    <p>Blue Lotus, Driftwood</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Base</h3>
+                                    <p>Grey Amber, Deep Sea Kelp</p>
+                                </div>
+                            </div>
+                            <div class="psych-box">
+                                <h4>Psychological Dimension</h4>
+                                <p>Delivers an authoritative sense of calm. Designed for individuals who lead with
+                                    silence yet certainty.</p>
+                            </div>
+                            <div class="color-harmony">
+                                <h4>Color Palette</h4>
+                                <div class="colors">
+                                    <div class="c-dot" style="background:#001f3f"></div>
+                                    <div class="c-dot" style="background:#003366"></div>
+                                    <div class="c-dot" style="background:#c5a059"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ezra -->
+                <section class="horizontal-section product-dossier" data-variant="ezra">
+                    <div class="dossier-grid">
+                        <div class="dossier-visual">
+                            <img src="assets/hafin_v3_ezra_unified_1772951712318.png" alt="Ezra">
+                        </div>
+                        <div class="dossier-info">
+                            <span class="variant-tag">Noble & Earthy</span>
+                            <h2 class="variant-title">EZRA</h2>
+                            <div class="note-blocks">
+                                <div class="note-block">
+                                    <h3>Top</h3>
+                                    <p>Pink Pepper, Frozen Pine</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Heart</h3>
+                                    <p>White Suede, Sandalwood</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Base</h3>
+                                    <p>Indonesian Patchouli, Vetiver</p>
+                                </div>
+                            </div>
+                            <div class="psych-box">
+                                <h4>Psychological Dimension</h4>
+                                <p>Stimulates a sense of security and connection with roots. Suitable for strategic
+                                    meetings that require an aura of wisdom.</p>
+                            </div>
+                            <div class="color-harmony">
+                                <h4>Color Palette</h4>
+                                <div class="colors">
+                                    <div class="c-dot" style="background:#1a2f1a"></div>
+                                    <div class="c-dot" style="background:#2d5a27"></div>
+                                    <div class="c-dot" style="background:#708090"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lea -->
+                <section class="horizontal-section product-dossier" data-variant="lea">
+                    <div class="dossier-grid">
+                        <div class="dossier-visual">
+                            <img src="assets/hafin_v3_lea_unified_1772951728851.png" alt="Lea">
+                        </div>
+                        <div class="dossier-info">
+                            <span class="variant-tag">Ethereal & Radiant</span>
+                            <h2 class="variant-title">LEA</h2>
+                            <div class="note-blocks">
+                                <div class="note-block">
+                                    <h3>Top</h3>
+                                    <p>Italian Bergamot, Lychee</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Heart</h3>
+                                    <p>Peony, Damask Rose</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Base</h3>
+                                    <p>White Musk, Cashmeran</p>
+                                </div>
+                            </div>
+                            <div class="psych-box">
+                                <h4>Psychological Dimension</h4>
+                                <p>Evokes an unreachable high-end elegance. An intellectual romantic aura.</p>
+                            </div>
+                            <div class="color-harmony">
+                                <h4>Color Palette</h4>
+                                <div class="colors">
+                                    <div class="c-dot" style="background:#e0b0ff"></div>
+                                    <div class="c-dot" style="background:#ffc0cb"></div>
+                                    <div class="c-dot" style="background:#d4af37"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Zayyan -->
+                <section class="horizontal-section product-dossier" data-variant="zayyan">
+                    <div class="dossier-grid">
+                        <div class="dossier-visual">
+                            <img src="assets/hafin_v3_zayyan_unified_1772951743850.png" alt="Zayyan">
+                        </div>
+                        <div class="dossier-info">
+                            <span class="variant-tag">Bold & Imperial</span>
+                            <h2 class="variant-title">ZAYYAN</h2>
+                            <div class="note-blocks">
+                                <div class="note-block">
+                                    <h3>Top</h3>
+                                    <p>Saffron, Nutmeg</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Heart</h3>
+                                    <p>Agarwood (Oud), Tobacco Leaf</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Base</h3>
+                                    <p>Tonka Bean, Black Leather</p>
+                                </div>
+                            </div>
+                            <div class="psych-box">
+                                <h4>Psychological Dimension</h4>
+                                <p>Dominance and Charisma. Designed for 'power players' who want to leave an
+                                    unforgettable mark.</p>
+                            </div>
+                            <div class="color-harmony">
+                                <h4>Color Palette</h4>
+                                <div class="colors">
+                                    <div class="c-dot" style="background:#cc5500"></div>
+                                    <div class="c-dot" style="background:#3d2b1f"></div>
+                                    <div class="c-dot" style="background:#b8860b"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ola -->
+                <section class="horizontal-section product-dossier" data-variant="ola">
+                    <div class="dossier-grid">
+                        <div class="dossier-visual">
+                            <img src="assets/hafin_v3_ola_unified_1772951761283.png" alt="Ola">
+                        </div>
+                        <div class="dossier-info">
+                            <span class="variant-tag">Vibrant & Intellectual</span>
+                            <h2 class="variant-title">OLA</h2>
+                            <div class="note-blocks">
+                                <div class="note-block">
+                                    <h3>Top</h3>
+                                    <p>Amalfi Lemon, Yuzu</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Heart</h3>
+                                    <p>Verbena, Solar Accord</p>
+                                </div>
+                                <div class="note-block">
+                                    <h3>Base</h3>
+                                    <p>Solar Musks, Blond Woods</p>
+                                </div>
+                            </div>
+                            <div class="psych-box">
+                                <h4>Psychological Dimension</h4>
+                                <p>Clarity of mind and modern optimism. Perfect for creative collaboration and
+                                    innovation.</p>
+                            </div>
+                            <div class="color-harmony">
+                                <h4>Color Palette</h4>
+                                <div class="colors">
+                                    <div class="c-dot" style="background:#FFD700"></div>
+                                    <div class="c-dot" style="background:#B8860B"></div>
+                                    <div class="c-dot" style="background:#FFFACD"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Composition Section Refined -->
+        <section id="composition" class="composition-section">
+            <div class="container">
+                <div class="comp-centered-header" data-reveal>
+                    <span class="section-tag">Internal Engineering</span>
+                    <h2>FORMULA ARCHITECTURE</h2>
+                </div>
+                <div class="comp-symmetrical-grid">
+                    <div class="ingredient-item" data-reveal>
+                        <div class="ing-card">
+                            <div class="card-bg"
+                                style="background-image: url('https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?q=80&w=1000&auto=format&fit=crop');">
+                            </div>
+                            <span class="ingredient-num">01</span>
+                            <span class="ingredient-name">25% Concentration</span>
+                            <p>Extrait de Parfum level for maximum sillage and precise molecular longevity.</p>
+                        </div>
+                    </div>
+                    <div class="ingredient-item" data-reveal>
+                        <div class="ing-card">
+                            <div class="card-bg"
+                                style="background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1000&auto=format&fit=crop');">
+                            </div>
+                            <span class="ingredient-num">02</span>
+                            <span class="ingredient-name">Bio-Hyrbid Solvents</span>
+                            <p>Environmentally friendly solvents that amplify scent character without chemical
+                                distortion.</p>
+                        </div>
+                    </div>
+                    <div class="ingredient-item" data-reveal>
+                        <div class="ing-card">
+                            <div class="card-bg"
+                                style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop');">
+                            </div>
+                            <span class="ingredient-num">03</span>
+                            <span class="ingredient-name">Maceration Period</span>
+                            <p>Scent maturation process in controlled temperatures to achieve absolute olfactory
+                                stability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packaging Section V4 -->
+        <section id="packaging" class="packaging-section">
+            <div class="container">
+                <div class="packaging-v4-grid">
+                    <div class="pack-visual">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/packaging_v5.png" alt="Hafin Engineering Design Front">
+                                </div>
+                                <div class="flip-card-back">
+                                    <img src="assets/packaging_v5-belakang.png" alt="Hafin Engineering Design Back">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-indicators">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="pack-details" data-reveal>
+                        <span class="section-tag">External Identity</span>
+                        <h2>PHYSICAL TOUCHPOINT</h2>
+                        <div class="industrial-grid">
+                            <div class="ind-item">
+                                <h3>Bottle</h3>
+                                <p>Custom lead-free clear glass with polished weighted base.</p>
+                            </div>
+                            <div class="ind-item">
+                                <h3>Cap</h3>
+                                <p>Zinc-Alloy magnetic cap with satisfying ergonomic click.</p>
+                            </div>
+                            <div class="ind-item">
+                                <h3>Label</h3>
+                                <p>Cotton-pulp debossed paper with UV-protected inks.</p>
+                            </div>
+                            <div class="ind-item">
+                                <h3>Box</h3>
+                                <p>Rigid board with silver-foil embossing and velvet inlay.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">HAFIN</div>
+                <p>Establishing the new global standard for Indonesian Haute Parfumerie.</p>
+            </div>
+            <div class="footer-nav">
+                <h3>Investor Relations</h3>
+                <a href="#">Financial Overview</a>
+                <a href="#">Production Scalability</a>
+                <a href="#">Sustainability Report</a>
+            </div>
+            <div class="footer-nav">
+                <h3>Connect</h3>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Contact Office</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 HAFIN PERFUMERY CO. BEYOND SCENT, AN IDENTITY.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

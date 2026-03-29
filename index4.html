@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEHA LEHA KEBULI | Arsitektur Rasa Autentik</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/kebuli.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <nav id="main-nav">
+        <a href="#" class="logo">LEHA LEHA</a>
+        <ul class="nav-links">
+            <li><a href="#about">Legacy</a></li>
+            <li><a href="#signature">Signature</a></li>
+            <li><a href="#ritual">The Ritual</a></li>
+            <li><a href="#location">Experience</a></li>
+        </ul>
+        <a href="#" class="nav-cta">Dine with Us</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-img-container" id="hero-img">
+                <img src="assets/kebuli_hero.png" alt="Signature Nasi Kebuli">
+            </div>
+            <div class="hero-content">
+                <span class="hero-tagline" data-reveal>The Golden Essence</span>
+                <h1 class="hero-title" data-reveal>ELEVATING<br>ANCIENT<br>HERITAGE</h1>
+                <p class="hero-description" data-reveal>Savor the symphony of Yemenite spices and premium Indian Basmati
+                    rice. A ritual of flavor, crafted for the modern soul.</p>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="about" class="story-section">
+            <div class="story-content" data-reveal>
+                <span class="hero-tagline" style="letter-spacing: 0.4rem; font-size: 0.75rem;">Our Origin</span>
+                <h2>SULTAN'S LEGACY,<br>AUTENTICALLY REDEFINED</h2>
+                <p>Nasi Kebuli kami bukan sekadar hidangan; ia adalah perjalanan melintasi waktu. Menggunakan resep
+                    turun-temurun yang memadukan kehangatan rempah Nusantara dengan kemewahan tradisi Timur Tengah.</p>
+                <p>Setiap butir nasi Basmati adalah komitmen kami terhadap kualitas, dimasak perlahan dalam kaldu kalapa
+                    dan rempah murni selama berjam-jam.</p>
+            </div>
+            <div class="story-visual" data-reveal>
+                <img src="assets/kebuli_ritual.png" alt="Chef preparing rice">
+            </div>
+        </section>
+
+        <!-- Parallax Break -->
+        <section class="parallax-section">
+            <div class="parallax-bg" id="parallax-bg-1">
+                <img src="assets/kebuli_spices.png" alt="Macro spices">
+            </div>
+            <div class="parallax-content" data-reveal>
+                <h2 style="color: var(--color-accent); font-style: italic;">"Scent is the first bite."</h2>
+            </div>
+        </section>
+
+        <!-- Signature Section -->
+        <section id="signature" class="signature-section">
+            <div class="container">
+                <div class="signature-grid">
+                    <div class="sig-item" data-reveal>
+                        <span class="sig-num">I</span>
+                        <h3 class="sig-title">AGED BASMATI</h3>
+                        <p class="sig-text">Beraskan Basmati pilihan dari India Utara, diproses untuk tekstur yang
+                            ringan namun padat akan cita rasa.</p>
+                    </div>
+                    <div class="sig-item" data-reveal>
+                        <span class="sig-num">II</span>
+                        <h3 class="sig-title">HARUS REMPAH</h3>
+                        <p class="sig-text">Kombinasi 14 rempah rahasia, termasuk Saffron murni dan Kapulaga Hijau yang
+                            didatangkan langsung dari sumbernya.</p>
+                    </div>
+                    <div class="sig-item" data-reveal>
+                        <span class="sig-num">III</span>
+                        <h3 class="sig-title">TENDER LAMB</h3>
+                        <p class="sig-text">Daging kambing muda pilihan, dimasak dengan teknik 'Slow-Braised' hingga
+                            meluruh dari tulangnya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA / Contact -->
+        <section id="location" style="text-align: center; background: #0a0a0a;">
+            <div class="container" data-reveal>
+                <h2 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 3rem;">EXPERIENCE THE
+                    RITUAL</h2>
+                <div style="margin-bottom: 4rem; color: var(--color-text-muted);">
+                    <p>Jl. Rempah No. 42, Jakarta South</p>
+                    <p>Open Daily: 11:00 AM - 10:00 PM</p>
+                </div>
+                <a href="#" class="nav-cta" style="padding: 1.5rem 4rem; font-size: 0.9rem;">Reserve Your Presence</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">LEHA LEHA KEBULI</div>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Our Menu</a>
+        </div>
+        <p class="copyright">&copy; 2024 LEHA LEHA KEBULI CO. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        // GSAP Initialization
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Navbar Animation
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Parallax Effects
+        gsap.to("#hero-img img", {
+            yPercent: 20,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".hero",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+        gsap.to("#parallax-bg-1 img", {
+            yPercent: 30,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".parallax-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+        // Reveal Animations
+        const reveals = document.querySelectorAll('[data-reveal]');
+        reveals.forEach(el => {
+            ScrollTrigger.create({
+                trigger: el,
+                start: "top 85%",
+                onEnter: () => el.classList.add('active'),
+                once: true
+            });
+        });
+
+        // Smooth Scroll for Anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

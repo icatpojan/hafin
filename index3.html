@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>!!! HAFIN PERFUMERY - WELCOME TO MY HOME PAGE !!!</title>
+    <style>
+        body {
+            background-color: #c0c0c0;
+            /* Classic Windows Gray */
+            color: #000000;
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #000080;
+            /* Navy Blue */
+            text-decoration: underline;
+        }
+
+        h2 {
+            background-color: #808080;
+            color: white;
+            padding: 5px;
+            border: 2px outset #ffffff;
+        }
+
+        .navbar {
+            background-color: #000080;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border: 3px double #ffffff;
+        }
+
+        .navbar a {
+            color: #ffff00;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            border: 1px solid #808080;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #000;
+            color: #ffff00;
+            padding: 50px;
+            border: 5px solid #ff0000;
+        }
+
+        .marquee-box {
+            background-color: #ff0000;
+            color: #fff;
+            font-weight: bold;
+            padding: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .variant-card {
+            border: 2px inset #ffffff;
+            background-color: #efefef;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .variant-tag {
+            font-weight: bold;
+            color: #008000;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 50px;
+            border-top: 1px dashed #000;
+            padding-top: 20px;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .guestbook-btn {
+            background-color: #c0c0c0;
+            border: 2px outset #ffffff;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1>
+            <font size="7" face="Comic Sans MS">HAFIN PERFUMERY</font>
+        </h1>
+        <p><i>Building the new global standard for Indonesian Haute Parfumerie (est. 2024)</i></p>
+    </center>
+
+    <div class="navbar">
+        <a href="#philosophy">Philosophy</a> |
+        <a href="#collection">Collection</a> |
+        <a href="#architecture">Architecture</a> |
+        <a href="#packaging">Packaging</a> |
+        <a href="mailto:info@hafin.com">Contact Us</a>
+    </div>
+
+    <br>
+
+    <div class="hero">
+        <marquee direction="left" behavior="alternate" scrollamount="5" class="marquee-box">
+            *** WELCOME TO THE FUTURE OF OLFACTORY ARCHITECTURE ***
+        </marquee>
+        <h2>REDEFINING SENSORY LUXURY</h2>
+        <p>
+            <font size="4">More than just a scent, it's a statement of identity. HAFIN curates the rarest essences for
+                authentic souls.</font>
+        </p>
+        <img src="assets/hafin_hero_brand_visual_1772950602138.png" width="400" border="3">
+        <br><br>
+        <button class="guestbook-btn" onclick="alert('Prospectus Requested!')">Request Prospectus</button>
+    </div>
+
+    <br>
+
+    <div id="philosophy" class="section">
+        <center>
+            <h2>HAFIN PHILOSOPHY</h2>
+        </center>
+        <p>HAFIN is not just a label; it is a manifestation of our dedication to perfection. We integrate cultural
+            heritage with future technology to create new standards in the global Haute Parfumerie industry.</p>
+
+        <table border="1">
+            <tr bgcolor="#000080" style="color:white">
+                <th>Value</th>
+                <th>Description</th>
+                <th>Spirit</th>
+            </tr>
+            <tr>
+                <td><b>H - Harmony</b></td>
+                <td>Ekuilibrium sensorik antara bahan baku eksotis Nusantara dan presisi teknik distilasi ultra-modern.
+                    <br><i>Ratio 0.618 (Golden Ratio) in molecular blending.</i>
+                </td>
+                <td>Connection</td>
+            </tr>
+            <tr>
+                <td><b>A - Absolute</b></td>
+                <td>Kejernihan tanpa kompromi. Hanya menggunakan konsentrat 'Absolute' murni dari distilasi pertama.
+                    <br><i>99.9% raw material purity without cheap synthetic fillers.</i>
+                </td>
+                <td>Integrity</td>
+            </tr>
+            <tr>
+                <td><b>F - Fine</b></td>
+                <td>Kurasi pengerjaan tangan (craftsmanship) tingkat tinggi pada setiap aspek fisik produk.
+                    <br><i>Italian crystal glass with 0.1mm thickness tolerance.</i>
+                </td>
+                <td>Respect</td>
+            </tr>
+            <tr>
+                <td><b>I - Infinite</b></td>
+                <td>Daya pancar (sillage) cerdas dan ketahanan yang melampaui siklus waktu harian.
+                    <br><i>Slow-Release Molecular Bond technology for 12+ hour longevity.</i>
+                </td>
+                <td>Confidence</td>
+            </tr>
+            <tr>
+                <td><b>N - Noble</b></td>
+                <td>Representasi martabat dan otoritas dalam spektrum penciuman yang elegan.
+                    <br><i>Scent profile dry-down that leaves a 'Velvet-Woody' impression.</i>
+                </td>
+                <td>Power</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="collection" class="section">
+        <center>
+            <h2>THE COLLECTION: 5 CHARACTERS</h2>
+        </center>
+
+        <div class="variant-card">
+            <h3 class="variant-tag">MAVI (Stoic & Oceanic)</h3>
+            <p>Notes: Sea Salt, Ozonic Accord (Top) | Blue Lotus, Driftwood (Heart) | Grey Amber, Deep Sea Kelp (Base)
+            </p>
+            <p><i>Psychology: Delivers an authoritative sense of calm.</i></p>
+        </div>
+
+        <div class="variant-card">
+            <h3 class="variant-tag">EZRA (Noble & Earthy)</h3>
+            <p>Notes: Pink Pepper, Frozen Pine (Top) | White Suede, Sandalwood (Heart) | Indonesian Patchouli, Vetiver
+                (Base)</p>
+            <p><i>Psychology: Stimulates a sense of security and connection.</i></p>
+        </div>
+
+        <div class="variant-card">
+            <h3 class="variant-tag">LEA (Ethereal & Radiant)</h3>
+            <p>Notes: Italian Bergamot, Lychee (Top) | Peony, Damask Rose (Heart) | White Musk, Cashmeran (Base)</p>
+            <p><i>Psychology: Evokes an unreachable high-end elegance.</i></p>
+        </div>
+
+        <div class="variant-card">
+            <h3 class="variant-tag">ZAYYAN (Bold & Imperial)</h3>
+            <p>Notes: Saffron, Nutmeg (Top) | Agarwood (Oud), Tobacco Leaf (Heart) | Tonka Bean, Black Leather (Base)
+            </p>
+            <p><i>Psychology: Dominance and Charisma.</i></p>
+        </div>
+
+        <div class="variant-card" style="margin-bottom:0">
+            <h3 class="variant-tag">OLA (Vibrant & Intellectual)</h3>
+            <p>Notes: Amalfi Lemon, Yuzu (Top) | Verbena, Solar Accord (Heart) | Solar Musks, Blond Woods (Base)</p>
+            <p><i>Psychology: Clarity of mind and modern optimism.</i></p>
+        </div>
+    </div>
+
+    <div id="architecture" class="section">
+        <center>
+            <h2>FORMULA ARCHITECTURE</h2>
+        </center>
+        <ul>
+            <li><b>01. 25% Concentration</b> - Extrait de Parfum level for maximum sillage.</li>
+            <li><b>02. Bio-Hyrbid Solvents</b> - Environmentally friendly solvents that amplify character.</li>
+            <li><b>03. Maceration Period</b> - Scent maturation process in controlled temperatures.</li>
+        </ul>
+    </div>
+
+    <div id="packaging" class="section">
+        <center>
+            <h2>PHYSICAL TOUCHPOINT</h2>
+        </center>
+        <table border="2" align="center" style="width:50%">
+            <tr>
+                <td><b>Bottle</b></td>
+                <td>Custom lead-free clear glass.</td>
+            </tr>
+            <tr>
+                <td><b>Cap</b></td>
+                <td>Zinc-Alloy magnetic cap.</td>
+            </tr>
+            <tr>
+                <td><b>Label</b></td>
+                <td>Cotton-pulp debossed paper.</td>
+            </tr>
+            <tr>
+                <td><b>Box</b></td>
+                <td>Rigid board with silver-foil.</td>
+            </tr>
+        </table>
+        <br>
+        <center><img src="assets/packaging_v5.png" width="300" border="1"></center>
+    </div>
+
+    <div class="footer">
+        <p class="blink"><b>*** VISITORS: 0001024 ***</b></p>
+        <p>Copyright &copy; 2024 HAFIN PERFUMERY CO. BEYOND SCENT, AN IDENTITY.</p>
+        <p>Best viewed in <b>Internet Explorer 4.0</b> or higher at 800x600 resolution.</p>
+        <p>
+            <a href="http://www.geocities.com/hafin_perfumes">GeoCities</a> |
+            <a href="#">Join My Webring</a> |
+            <a href="#">Sign My Guestbook</a>
+        </p>
+        <br>
+        <img src="https://web.archive.org/web/20090829141648im_/http://geocities.com/Tokyo/6550/ie_logo.gif"
+            alt="IE Logo">
+        <img src="https://web.archive.org/web/20091024031649im_/http://geocities.com/Heartland/Acres/2153/netscape.gif"
+            alt="Netscape Logo">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ORD-1773255185017",
+    "customer": "6285600267104@c.us",
+    "items": [
+      {
+        "name": "Sate Ayam (10 Tusuk)",
+        "quantity": 1
+      },
+      {
+        "name": "Es Teh Manis",
+        "quantity": 1
+      },
+      {
+        "name": "Nasi Goreng Spesial",
+        "quantity": 1
+      },
+      {
+        "name": "Pengantaran",
+        "quantity": 1
+      }
+    ],
+    "total": 55000,
+    "status": "Pending",
+    "timestamp": "2026-03-11T18:53:05.017Z"
+  },
+  {
+    "id": "ORD-1773255940342",
+    "customer": "6285600267104@c.us",
+    "customer_name": "Marcel",
+    "items": [
+      {
+        "name": "Es Teh Manis",
+        "quantity": 2
+      },
+      {
+        "name": "Nasi Goreng Spesial",
+        "quantity": 1
+      },
+      {
+        "name": "Lele Goreng Kriuk",
+        "quantity": 2
+      }
+    ],
+    "total": 71000,
+    "status": "Pending",
+    "timestamp": "2026-03-11T19:05:40.342Z"
+  },
+  {
+    "id": "ORD-1773257722663",
+    "customer": "6285600267104@c.us",
+    "customer_name": "hayyi",
+    "items": [
+      {
+        "name": "Nasi Goreng Spesial",
+        "quantity": 1
+      },
+      {
+        "name": "Es Kelapa Muda",
+        "quantity": 1
+      }
+    ],
+    "total": 35000,
+    "status": "Pending",
+    "timestamp": "2026-03-11T19:35:22.663Z"
+  }
+]

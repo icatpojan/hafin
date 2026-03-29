@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scroll Video Product</title>
+
+<style>
+body{
+  margin:0;
+  height:400vh;
+  font-family:sans-serif;
+}
+
+.section{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  display:flex;
+}
+
+/* kiri video */
+.left{
+  width:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:black;
+}
+
+.left video{
+  width:80%;
+  border-radius:10px;
+}
+
+/* kanan konten */
+.right{
+  width:50%;
+  padding:80px;
+  background:white;
+}
+
+.right h1{
+  font-size:40px;
+}
+
+.right p{
+  font-size:18px;
+  line-height:1.6;
+}
+</style>
+
+</head>
+<body>
+
+<div class="section">
+
+  <div class="left">
+    <video id="productVideo" muted preload="auto">
+  <source src="assets/grok-video-f9e1e525-13e2-4e2b-908d-496236237072.mp4" type="video/mp4">
+
+      <!-- <source src="parfum-rotate.mp4" type="video/mp4"> -->
+    </video>
+  </div>
+
+  <div class="right">
+    <h1>Parfum Hafil</h1>
+    <p>
+      Parfum premium dengan lima varian aroma eksklusif.
+      Dirancang untuk memberikan kesan elegan dan mewah
+      pada setiap kesempatan.
+    </p>
+  </div>
+
+</div>
+
+<script>
+
+const video = document.getElementById("productVideo");
+
+window.addEventListener("scroll", () => {
+
+  const scrollTop = window.scrollY;
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+
+  const percent = scrollTop / maxScroll;
+
+  video.currentTime = percent * video.duration;
+
+});
+
+</script>
+
+</body>
+</html>

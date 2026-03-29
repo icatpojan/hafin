@@ -1,0 +1,50 @@
+[
+  {
+    "id": "CMPL-1773285314006",
+    "sender": "6285600267104@c.us",
+    "feature": "Maps",
+    "detail": "Ada gangguan di maps JID yang tidak tampil.",
+    "timestamp": "2026-03-12T03:15:14.006Z"
+  },
+  {
+    "id": "CMPL-1773285338680",
+    "sender": "6285600267104@c.us",
+    "feature": "Maps",
+    "detail": "Gangguan lalin tidak tampil di peta JID.",
+    "timestamp": "2026-03-12T03:15:38.680Z"
+  },
+  {
+    "id": "CMPL-1773285477233",
+    "sender": "6285600267104@c.us",
+    "feature": "Maps",
+    "detail": "Terjadi kendala di bagian maps, tidak dapat menampilkan informasi yang diinginkan.",
+    "timestamp": "2026-03-12T03:17:57.233Z"
+  },
+  {
+    "id": "CMPL-1773285587568",
+    "sender": "6285600267104@c.us",
+    "feature": "Maps",
+    "detail": "Gangguan lalin tidak tampil di maps.",
+    "timestamp": "2026-03-12T03:19:47.568Z"
+  },
+  {
+    "id": "CMPL-1773286391024",
+    "sender": "6285600267104@c.us",
+    "reporter_name": "krisna",
+    "feature": "Maps",
+    "solusi": "aplikasi sudah di optimasi",
+    "catatan": "user diminta pakai mackbook kalau bisa",
+    "detail": "Aplikasi maps sering hang, membuat sulit untuk digunakan.",
+    "status": "selesai",
+    "timestamp": "2026-03-12T03:33:11.024Z"
+  },
+  {
+    "id": "CMPL-1773286470544",
+    "sender": "6285600267104@c.us",
+    "reporter_name": "musa",
+    "feature": "Maps",
+    "detail": "Keluhan Krisna mengenai maps yang hang sudah diperbaiki. Maps sekarang sudah berfungsi dengan baik.",
+    "status": "Pending",
+    "timestamp": "2026-03-12T03:34:30.544Z"
+  }
+]

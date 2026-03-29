@@ -1,0 +1,110 @@
+{
+    "restaurant_name": "Warung Makan Berkah",
+    "menu": [
+        {
+            "id": 1,
+            "name": "Nasi Goreng Spesial",
+            "price": 25000,
+            "description": "Nasi goreng dengan telur mata sapi, ayam suwir, sosis, dan kerupuk udang.",
+            "image_path": "./assets/nasi_goreng.png",
+            "can_deliver": true
+        },
+        {
+            "id": 2,
+            "name": "Ayam Bakar Madu",
+            "price": 30000,
+            "description": "Ayam bakar bumbu madu manis gurih dengan sambal terasi.",
+            "image_path": "./assets/ayam_bakar.png",
+            "can_deliver": true
+        },
+        {
+            "id": 3,
+            "name": "Ayam Geprek Level 1-5",
+            "price": 22000,
+            "description": "Ayam goreng tepung renyah dengan sambal bawang pedas.",
+            "image_path": "./assets/ayam_geprek.png",
+            "can_deliver": true
+        },
+        {
+            "id": 4,
+            "name": "Sate Ayam (10 Tusuk)",
+            "price": 20000,
+            "description": "Sate ayam dengan bumbu kacang kental dan lontong.",
+            "image_path": "./assets/sate_ayam.png",
+            "can_deliver": true
+        },
+        {
+            "id": 5,
+            "name": "Lele Goreng Kriuk",
+            "price": 18000,
+            "description": "Ikan lele goreng kering dengan kremesan.",
+            "image_path": "./assets/lele_goreng.png",
+            "can_deliver": true
+        },
+        {
+            "id": 6,
+            "name": "Es Teh Manis",
+            "price": 5000,
+            "description": "Teh segar dengan gula asli dan es batu kristal.",
+            "image_path": "./assets/es_teh.png",
+            "can_deliver": true
+        },
+        {
+            "id": 7,
+            "name": "Es Jeruk Peras",
+            "price": 8000,
+            "description": "Jeruk peras murni segar.",
+            "image_path": "./assets/es_jeruk.png",
+            "can_deliver": true
+        },
+        {
+            "id": 8,
+            "name": "Jus Alpukat Kocok",
+            "price": 15000,
+            "description": "Alpukat segar dengan topping coklat melimpah.",
+            "image_path": "./assets/jus_alpukat.png",
+            "can_deliver": true
+        },
+        {
+            "id": 9,
+            "name": "Kopi Susu Gula Aren",
+            "price": 12000,
+            "description": "Kopi robusta dengan susu dan gula aren cair.",
+            "image_path": "./assets/kopi_susu.png",
+            "can_deliver": true
+        },
+        {
+            "id": 10,
+            "name": "Es Kelapa Muda",
+            "price": 10000,
+            "description": "Kelapa muda segar dengan sirup cocopandan.",
+            "image_path": "./assets/es_kelapa.png",
+            "can_deliver": true
+        },
+         {
+            "id": 12,
+            "name": "Mukamu",
+            "price": 10000,
+            "description": "Kelapa muda segar dengan sirup cocopandan.",
+            "image_path": "./assets/mukamu.png",
+            "can_deliver": true
+        },
+        {
+            "id": 13,
+            "name": "cewe seksi",
+            "price": 10000,
+            "description": "cewe seksi",
+            "image_path": "./assets/cewe.png",
+            "can_deliver": true
+        },
+        {
+            "id": 11,
+            "name": "Teh Tarik Dingin",
+            "price": 9000,
+            "description": "Perpaduan teh dan susu yang dikocok sampai berbusa.",
+            "image_path": "./assets/teh_tarik.png",
+            "can_deliver": true
+        }
+    ],
+    "delivery_info": "Pengantaran tersedia untuk jarak maksimal 5km dengan biaya 5rb."
+}

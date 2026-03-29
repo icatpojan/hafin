@@ -1,0 +1,11 @@
+# Minimal configuration - should not cause 500 error
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+</IfModule>
+
+# Only add MIME types if the module exists
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType text/javascript .js
+</IfModule>
+
